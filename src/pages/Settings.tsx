@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Lock, Bell, Display } from "lucide-react";
+import { User, Lock, Bell, Monitor } from "lucide-react";
 
 const settingsSections = [
   {
@@ -19,7 +19,7 @@ const settingsSections = [
   },
   {
     title: "Display",
-    icon: Display,
+    icon: Monitor,
     description: "Adjust the appearance and layout settings",
   },
 ];
