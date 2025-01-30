@@ -10,6 +10,7 @@ import Documents from "./pages/Documents";
 import Communication from "./pages/Communication";
 import Notifications from "./pages/Notifications";
 import Settings from "./pages/Settings";
+import Integrations from "./pages/Integrations";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,16 @@ const App = () => (
           <Route path="/documents" element={<DashboardLayout><Documents /></DashboardLayout>} />
           <Route path="/communication" element={<DashboardLayout><Communication /></DashboardLayout>} />
           <Route path="/notifications" element={<DashboardLayout><Notifications /></DashboardLayout>} />
+          <Route path="/integrations" element={<DashboardLayout><Integrations /></DashboardLayout>} />
+          <Route path="/integrations/*" element={
+            <DashboardLayout>
+              <div className="flex items-center justify-center h-full">
+                <p className="text-muted-foreground">
+                  Individual integration pages are under development
+                </p>
+              </div>
+            </DashboardLayout>
+          } />
           <Route path="/settings" element={<DashboardLayout><Settings /></DashboardLayout>} />
           <Route
             path="*"

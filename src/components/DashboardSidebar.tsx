@@ -6,7 +6,8 @@ import {
   MessageSquare,
   Bell,
   Settings,
-  Boxes
+  Boxes,
+  AppWindow
 } from "lucide-react";
 
 const menuItems = [
@@ -15,6 +16,7 @@ const menuItems = [
   { icon: FileText, label: "Documents", path: "/documents" },
   { icon: MessageSquare, label: "Communication", path: "/communication" },
   { icon: Bell, label: "Notifications", path: "/notifications" },
+  { icon: AppWindow, label: "Integrations", path: "/integrations" },
   { icon: Settings, label: "Settings", path: "/settings" },
 ];
 
